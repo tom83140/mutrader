@@ -4,7 +4,6 @@ const path = require("path");
 const crypto = require("crypto");
 
 const app = express();
-const PORT = 3000;
 
 // ---- MIDDLEWARE ----
 app.use(express.json());
@@ -197,4 +196,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
